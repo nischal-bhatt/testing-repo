@@ -61,7 +61,7 @@ public class EmployeeControllerIT /*extends AbstractionBaseTest*/{
         //System.out.println(mySQLContainer.getUsername() + "nish");
         //System.out.println(mySQLContainer.getJdbcUrl());
 
-        Employee e = Employee.builder().firstName("E").lastName("R").email("nishimura@he.com").build();
+        Employee e = Employee.builder().firstName("E").lastName("R").email("pandoan@he.com").build();
         ResultActions response = mockMvc.perform(post("/api/employees")
                 .contentType(MediaType.APPLICATION_JSON)
                 .content(objectMapper.writeValueAsString(e)));
